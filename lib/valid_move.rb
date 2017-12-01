@@ -2,7 +2,7 @@
 
 def valid_move?(board, index)
   a = index > 8 || index < 0
-  if position_taken?(board, index) && a
+  if position_taken?(board, index) || a
     return false
   else
     return true
